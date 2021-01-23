@@ -35,5 +35,5 @@ header, h1, ul, img{
   display: inline-block;
 }
 img{margin: auto;}
-</style>')
+</style>');
 ?>
