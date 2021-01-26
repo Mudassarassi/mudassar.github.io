@@ -15,6 +15,7 @@ h1{
     position:absolute;
     width:20%;
     border: 1px solid black;
+    overflow: hidden;
 }
 .box:nth-child(1){  /* primero div Child*/
     left: 0vw;  
