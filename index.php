@@ -1,182 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <title>PHP_M5</title>
-    </head>
-    <body>
-        <?php
-        echo "<h1>Nivell 1 </h1>";
-        echo "<br>";
-        echo "<br>";
-        echo "<strong>exercici 1</strong>"."<br>"."<br>"."<br>";
-         $integ = 25; //declara un integer
-         $dob = 2.4;  //declara un double
-         $letter = "Hello world"; //declara string
-         $existe = true; //declara boolean   
+<html>
+<head>
+</head>
+<body style="text-align:center;">
+    <?php
+        //funcion de restar dado 2 numeros da resultado
+        echo "<h1><strong>Nivell 1</strong></h1><br><br>";
+        echo "<strong>exercici 1</strong>"."<br>"."<br>";
 
-         echo $integ."<br>";    
-         echo $dob."<br>";
-         echo $letter."<br>";
-         echo $existe."<br>";
-         
-         echo "<br>";
-         echo "<br>";
-         
-         echo "<strong>exercici 2</strong>"."<br>";
-         $letter1 ="exercici2";
-
-         //Imprime length de string
-         echo strlen($letter.$letter1)."<br>";
-         echo strlen ($letter)."<br>";
-         echo strlen ($letter1)."<br>";
-
-         //Imprime string alravez
-         echo strrev ($letter)."<br>";
-         echo strrev ($letter1)."<br>";
-
-         echo "<br>";
-         echo "<br>";
-
-         //imprime cancatenacion de dos string
-         echo $letter." ".$letter1."<br>"."<br>";
-
-         //creacion de constant
-
-         define("bienvenido", "Bienvenido el curso de PHP");
-         echo bienvenido;
-
-         //
-         echo "<h1>Nivell 2 </h1>";
-
-         //crear array exercici 1
-         $info = array(2, 3, 4, 5, 6);
-         $info1 = array(5, 4, 3);
-
-        echo "<br>";
-        echo "<br>";
-
-         //exercici 2
-
-         $info1[3] = 2;
-
-         echo "<br>";
-         echo "<br>";
+        function resta($n1, $n2){
+            return $n1-$n2;
+        }
+        echo resta(3,2)."<br>"."<br>"."<br>";
 
 
-         //exercici 3
-         echo "<strong>Exercici 3</strong><br><br>";
+        echo "<strong>exercici 2</strong>"."<br>"."<br>";
+        //Dado un numero dice si un numero es par o impar
 
-         $sumainfo = array_merge($info,$info1);
-         echo count($sumainfo);
+        $edad = 15;
+        if($edad%2==0) {
+            echo "Este numero es par";
+        } else {
+            echo "Este numero es impar"."<br>"."<br>";
+        };
 
-         echo "<br>";
-         echo "<br>";
+        echo "<strong>exercici 3</strong>"."<br>"."<br>";
+        //Funcion dado un numero dice par o impar
 
-         echo "<h1>Nivell 3 </h1>";
+        function parell_o_imparell($n){
+            if($n%2==0) {
+                echo "Este numero es par";
+            } else {
+                echo "Este numero es impar"."<br>"."<br>";
+            };
 
-         echo "<br>";
-         echo "<br>";
+        };
+        echo parell_o_imparell(10)."<br>"."<br>";
 
-         //exercici 1
-         echo "<strong>exercici 1</strong>"."<br>";
+        echo "<strong>exercici 4</strong>"."<br>"."<br>";
 
-         foreach($sumainfo as $x) {
-             echo $x;
-             echo "<br>";
-         }
-         echo "<br>"."<br>"."<br>";
-
-         //exercici 2
-         echo "<strong>exercici 2</strong><br><br>";
-
-         $X = 3;
-         $Y = 4;
-         $N = 5.4;
-         $M = 2.7;
-
-         echo $X;
-         echo "<br>";
-         echo $Y;
-         echo "<br>";
-         echo $N;
-         echo "<br>";
-         echo $M;
-         echo "<br>"."<br>"."<br>";
-
-         echo "suma, resta, multiplicacion, devision y Modulus de <strong>X</strong> y <strong>Y</strong><br><br>";
-
-         echo "suma de X y Y"."<br>";
-         echo $X + $Y;
-         echo "<br>";
-         echo "rest de X y Y"."<br>";
-         echo $X - $Y;
-         echo "<br>";
-         echo "Producto de X y Y"."<br>";
-         echo $X * $Y;
-         echo "<br>";
-         echo "Division de X y Y"."<br>";
-         echo $X / $Y;
-         echo "<br>";
-         echo "Modulus de X y Y"."<br>";
-         echo $X % $Y;
-         echo "<br>"."<br>"."<br>";
-
-         echo "suma, resta, multiplicacion, devision y Modulus de <strong>N</strong> y <strong>M</strong><br><br>";
-
-
-
-         echo "suma de N y M"."<br>";
-         echo $N + $M;
-         echo "<br>";
-         echo "resta de N y M"."<br>";
-         echo $N - $M;
-         echo "<br>";
-         echo "Producto de N y M"."<br>";
-         echo $N * $M;
-         echo "<br>";
-         echo "deivision de N y M"."<br>";
-         echo $N / $M;
-         echo "<br>";
-         echo "Modulus de N y M"."<br>";
-         echo $N % $M;
-         echo "<br>"."<br>"."<br>"."<br>";
-
-         //el doble de cada uno
-         
-
-
-         echo "El doble de cada uno"."<br>"."<br>";
-
-         echo $Y * 2;
-         echo "<br>";
-         echo $x * 2;
-         echo "<br>";
-         echo $N * 2;
-         echo "<br>";
-         echo $M * 2;
-         echo "<br>"."<br>"."<br>";
-
-
-         //suma de todos variables
-         echo "Suma total"."<br>"."<br>";
-
-         echo $Y + $X + $N + $M;
-         echo "<br>"."<br>"."<br>";
-
-         echo "Multiplicacion de todo"."<br>"."<br>";
-
-         echo $Y * $X * $N * $M;
-
-
-
-
-         
+        for($i=0; $i<=10; $i++){
+            echo $i." ";
+        };
+        echo "<br>"."<br>";
 
 
 
 
 
 
-        ?>
-    </body>
+    ?>
+ 
+</body>
+
 </html>
