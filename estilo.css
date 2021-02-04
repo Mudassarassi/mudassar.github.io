@@ -1,0 +1,17 @@
+
+
+h2 {
+    color : blue;
+}
+.text-primary {
+    color: black;
+}
+
+.bg-light {
+    background-color: black;
+}
+.text-danger {
+    text-decoration-color:saddlebrown;
+    background-color: saddlebrown;
+}
+
