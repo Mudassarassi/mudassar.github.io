@@ -30,17 +30,19 @@
              $precio = $_GET["precio"];
              $can = $_GET["quan"];
    */    
-$id = filter_input(INPUT_GET, "id"); // get id through query string
+$id = $_GET['id']; // get id through query string
 echo $id;
- $name = filter_input(INPUT_GET, "name");
-  $precio = filter_input(INPUT_GET, "precio");
-  $can = filter_input(INPUT_GET, "quan");
+ $name = $_POST['name'];
+  $precio = filter_input(INPUT_POST, "precio");
+  $can = filter_input(INPUT_POST, "quan");
   echo $name." ".$precio." ".$can;
        
 $edit = "UPDATE compra SET Nom='$name', Preu='$precio',Quantitat='$can' where id = '$id'"; // Update query
 
 if ($mysqli->query($edit)===TRUE){
             echo "Producto cambiado";
+              header("location:index.php"); // Vuelve a la pagina original
+    exit;	
     // Close connection
      // Vuelve a la pagina original
     	

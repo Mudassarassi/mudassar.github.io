@@ -25,7 +25,7 @@ table, th, td, form {
 
                 <?php
   
-$id = $_GET['id']; echo "<form method='GET' action='edit.php?id=" . $id . "'>";
+$id = $_GET['id']; echo "<form method='POST' action='edit.php?id=" . $id . "'>";
 
 ?>
   <label for="fname">Producto</label><br>
