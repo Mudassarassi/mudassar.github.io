@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "d5478464-aa9b-4af7-b6e0-e0e8c2cb706b",
+		"name": "PHP_M9first",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_M9/PHP_M9/public/first",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_M9",
+						"PHP_M9",
+						"public",
+						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "first",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_M9/PHP_M9/public/first",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_M9",
+						"PHP_M9",
+						"public",
+						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "second",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_M9/PHP_M9/public/second",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_M9",
+						"PHP_M9",
+						"public",
+						"second"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "third",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/PHP_M9/PHP_M9/public/third/Juan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PHP_M9",
+						"PHP_M9",
+						"public",
+						"third",
+						"Juan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
