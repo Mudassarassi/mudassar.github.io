@@ -22,17 +22,17 @@
         @enderror
       </div>
       <div class="mb-3">
-        <label for="Job" class="form-label">Job</label>
-        <input type="text" class="form-control" id="Job" name="Job" aria-describedby="emailHelp">
+        <label for="job" class="form-label">Job</label>
+        <input type="text" class="form-control" id="job" name="job" aria-describedby="emailHelp">
         @error('job')
-        <div class="alert alert-danger">Your adress</div>
+        <div class="alert alert-danger">You Job</div>
         @enderror
       </div>
       <div class="mb-3">
         <label for="adress" class="form-label">address</label>
         <input type="text" class="form-control" id="adress" name="adress" aria-describedby="emailHelp">
         @error('adress')
-        <div class="alert alert-danger">Your Job</div>
+        <div class="alert alert-danger">Your Adress</div>
         @enderror
       </div>
       <button type="submit" class="btn btn-primary">Add employe</button>

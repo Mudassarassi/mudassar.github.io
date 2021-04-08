@@ -50,9 +50,9 @@ class EmpController extends Controller
         //
         $emp = new emp;
         $emp->name = $request->name;
-        $emp->email = $request->name;
-        $emp->job = $request->name;
-        $emp->adress = $request->name;
+        $emp->email = $request->email;
+        $emp->job = $request->job;
+        $emp->adress = $request->adress;
         $emp->save();
         return redirect()->route('emp.index');
     }
