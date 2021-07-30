@@ -1,10 +1,9 @@
 <?php
 
-use App\Http\Controllers\adminController;
+use App\Http\Controllers\BotigasController;
+use App\Http\Controllers\QuadresController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
-use App\Http\Controllers\ReservaController;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -24,21 +23,10 @@ Route::get('/', function () {
 Route::get('/employees', [EmployeeController::class, 'index']);
 Route::get('/employees/{employees}/edit', [EmployeeController::class, 'show']);
 
-Route::get('/reservas', [ReservaController::class, 'index'])->name('reserva.index');
-Route::post('/reservas/store', [ReservaController::class, 'store'])->name('reserva.store');
-Route::get('/reservas/show/{id}', [ReservaController::class, 'show'])->name('reserva.show');
-Route::get('/reservas/{id}/edit', [ReservaController::class, 'edit'])->name('reserva.edit');
-Route::PUT('/reservas/update', [ReservaController::class, 'update'])->name('reserva.update');
+Route::get('index1', function()
+{ return view('botigas');
 
-//Route::resource('reservas', ReservaController::class);
-
-
-Route::get('/mireserva', [ReservaController::class, 'edit'])->name('mireserva.index');
-
-Route::get('/edit', [ReservaController::class, 'edit'])->name('edit.index');
-
-Route::get('/admin', [adminController::class, 'index'])->name('admin.index');
-
+});
 
 
 

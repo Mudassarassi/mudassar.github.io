@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\reserva;
+use App\Models\quadres;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ReservaFactory extends Factory
+class QuadresFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = reserva::class;
+    protected $model = quadres::class;
 
     /**
      * Define the model's default state.
@@ -23,6 +23,10 @@ class ReservaFactory extends Factory
     {
         return [
             //
+            'nomAutor' =>$this->faker->name,
+            'nom'=> $this->faker->name,
+            'describe'=> $this->faker->text,
+            'idBotiga'=> $this->faker->randomElement([1,2,3,4])
         ];
     }
 }

@@ -33,27 +33,24 @@
     <div class="page-wrapper">
         <!-- HEADER MOBILE-->
 @include('layouts.partial.header-mobile')
+
         <!-- END HEADER MOBILE-->
+                <!-- PAGE CONTAINER-->
+                <div class="page-container">
+                    <!-- HEADER DESKTOP-->
+                    @include('layouts.partial.header-desktop')
 
         <!-- MENU SIDEBAR-->
-@include('layouts.partial.sidebar')
+
         <!-- END MENU SIDEBAR-->
 
-        <!-- PAGE CONTAINER-->
-        <div class="page-container">
-            <!-- HEADER DESKTOP-->
-            @include('layouts.partial.header-desktop')
+
             <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
-            <div class="main-content">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid">
+
                         @yield('content')
 
-                    </div>
-                </div>
-            </div>
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->
         </div>
@@ -62,7 +59,7 @@
 
 
 
-
+        <script src="{{mix('js/app.js')}}"></script>
         <!-- Jquery JS-->
         <!-- Bootstrap JS-->
         <script src="{!! asset('temas/vendor/jquery-3.2.1.min.js') !!}"></script>

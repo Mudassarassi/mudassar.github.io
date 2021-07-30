@@ -7,29 +7,18 @@
     <div class="menu-sidebar__content js-scrollbar1">
         <nav class="navbar-sidebar">
             <ul class="list-unstyled navbar__list">
+                <li class="active has-sub">
+                    <li>
+                        <a href="{{route('quadres.index')}}">
+                            All Paintings</a>
+                    </li>
+                    <a class="js-arrow" href="#">
+                        Paintings by Shop</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list" id="botiga">
 
-                 @auth
-                 <li>
-                    <a href="{{ route('reserva.show',  Auth::user()->id) }}">
-                        <i class="fas fa-table"></i>Mi Reservas</a>
+                            <botigas-Component></botigas-Component>
+                        </ul>
                 </li>
-                <li>
-                    <a href="{{ route('reserva.index',  Auth::user()->id) }}">
-                        <i class="fas fa-table"></i>New Booking</a>
-                </li>
-
-
-                @endauth
-                @if (Auth::user()->is_admin)
-
-
-
-                <li>
-                    <a href="{{route('admin.index')}}">
-                        <i class="fas fa-chart-bar"></i>Administrador</a>
-                </li>
-                @endif
-
 
 
             </ul>

@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class ReservaSeeder extends Seeder
+class QuadresSeeder extends Seeder
 {
     /**
      * Run the database seeds.
