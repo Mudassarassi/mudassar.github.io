@@ -1,0 +1,35 @@
+<table class="table table-borderless table-striped table-earning">
+    <thead>
+        <tr class=>
+            <th>Book ID</th>
+            <th>Autor</th>
+            <th>Book Name</th>
+            <th class="col-3" style="width: 20%;">Description</th>
+            <th class="">Shop ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ($quadre as $quadres)
+        <tr class=>
+            <td>{{$quadres->id}}</td>
+            <td>{{$quadres->nomAutor}}</td>
+            <td class="col-2">{{$quadres->nom}}</td>
+            <td class="col-2" style="width: 50px;">{{$quadres->describe}}</td>
+            <td>{{$quadres->idBotiga}}</td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
+
+
+//sidebar botigas
+
+<ul class="list-unstyled navbar__sub-list js-sub-list">
+                       @foreach ($botiga as $botigas )
+                        <li>
+                            <a href="{{route('quadres.show', $botigas->id)}}">{{$botigas->nom}}</a>
+                        </li>
+                        @endforeach
+                    </ul>
+
+
